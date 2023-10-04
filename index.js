@@ -6,9 +6,7 @@ server.use(express.json());
 
 const mongoose = require('mongoose');
 const path = require('path');
-require('dotenv').config({
-  path: path.join(__dirname, '.env'),
-});
+require('dotenv').config();
 
 main().catch((err) => console.log(err));
 
